@@ -10,7 +10,7 @@ const Banner = () => {
     useEffect(() => {
         const fetchBannerDetails = async() => {
             try {
-                const response  = await axios.get("http://localhost:8800/api/banner-info")
+                const response  = await axios.get("https://banner-backend-ee9j.onrender.com/api/banner-info")
                 setBannerData(response.data[0]);
             } catch (error) {
                 console.log(error)

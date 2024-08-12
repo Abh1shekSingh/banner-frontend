@@ -16,7 +16,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchBannerData = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/api/banner-info");
+        const res = await axios.get("https://banner-backend-ee9j.onrender.com/api/banner-info");
         setBannerData(res.data[0]);
       } catch (error) {
         console.log(error)
@@ -36,7 +36,7 @@ function Dashboard() {
     e.preventDefault();
 
     try {
-        await axios.put("http://localhost:8800/api/banner-info", {is_active:isActiveBanner, descr:description, link:link, timer_hour:timerHours, timer_min:timerMinutes, timer_sec:timerSeconds})
+        await axios.put("https://banner-backend-ee9j.onrender.com/api/banner-info", {is_active:isActiveBanner, descr:description, link:link, timer_hour:timerHours, timer_min:timerMinutes, timer_sec:timerSeconds})
         navigate("/")
     }catch(err) {
         console.log(err)

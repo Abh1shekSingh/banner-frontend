@@ -10,7 +10,7 @@ const Timer = () => {
   useEffect(() => {
     const fetchBannerData = async() => {
       try {
-        const response = await axios.get("http://localhost:8800/api/banner-info");
+        const response = await axios.get("https://banner-backend-ee9j.onrender.com/api/banner-info");
         setTimerData(response?.data[0])
       }catch(err) {
         console.log(err);
