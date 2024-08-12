@@ -1,0 +1,53 @@
+.banner {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.image_container {
+    position: relative;
+}
+
+.banner_heading {
+    font-size: 52px;
+    letter-spacing: 7px;
+    color: lightcoral;
+}
+
+.banner_timer_labels, .banner_timer_inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner_timer_labels p {
+    font-size: 15px;
+    color: gray;
+  }
+
+  .digit_container {
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .banner_timer_inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .banner_timer_inputs p {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+

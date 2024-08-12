@@ -1,0 +1,75 @@
+#banner {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dashboard {
+    color: white;
+    background-color: #4CAF50;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h4 {
+    font-size: 24px;
+}
+
+.hero h2 {
+    font-size: 68px;
+    margin-bottom: .5em;
+}
+
+.notification {
+    margin-top: 2em ;
+}
+
+.notification p {
+    font-size: 18px;
+    margin-bottom: .5em ;
+    width: 55ch;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.empty h1 {
+    font-size: 72px;
+    color: #4CAF50;
+}
+
+.error {
+    font-size: 12em !important;
+    color: gray !important;
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
+}
