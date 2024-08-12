@@ -24,9 +24,9 @@ function Dashboard() {
     }
     fetchBannerData();
     setIsActiveBanner(bannerData.is_active);
-    setDescription(bannerData.desc)
+    setDescription(bannerData.descr)
     setLink(bannerData.link)
-  },[bannerData.desc, bannerData.is_active, bannerData.link])
+  },[bannerData.descr, bannerData.is_active, bannerData.link])
 
   console.log(bannerData)
 
@@ -36,7 +36,7 @@ function Dashboard() {
     e.preventDefault();
 
     try {
-        await axios.put("http://localhost:8800/api/banner-info", {is_active:isActiveBanner, desc:description, link:link, timer_hour:timerHours, timer_min:timerMinutes, timer_sec:timerSeconds})
+        await axios.put("http://localhost:8800/api/banner-info", {is_active:isActiveBanner, descr:description, link:link, timer_hour:timerHours, timer_min:timerMinutes, timer_sec:timerSeconds})
         navigate("/")
     }catch(err) {
         console.log(err)

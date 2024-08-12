@@ -18,8 +18,7 @@ const Banner = () => {
         }
         fetchBannerDetails();
     }, [])
-
-    const {is_active, desc, link } = bannerData;
+    const {is_active, descr, link } = bannerData;
 
   return (
     <>
@@ -41,7 +40,7 @@ const Banner = () => {
                     <Timer />
                 </div>
                 <div className="notification">
-                    <p>{desc}</p>
+                    <p>{descr}</p>
                     <a href={link}><button>Visit</button></a>
                 </div>
             </div>
